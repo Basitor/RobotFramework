@@ -19,3 +19,6 @@ class TestCase:
             string = case + "test"
         """
         return case + "test"
+
+
+print(TestCase.test_add_string_return.__doc__)

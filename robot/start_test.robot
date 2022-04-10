@@ -13,12 +13,12 @@ Test Setup  test_setup
 
 7000 test for loop
     FOR  ${CASE}  IN  @{str_cases}
-        test_add_string_no_return  ${CASE}        ${CASE}test
+        test_add_string_no_return  ${CASE}  ${CASE}test
     END
 
 7001 test2
     TRY
-        test_add_string_no_return  ${1}        ${1}test
+        test_add_string_no_return  ${1}  ${1}test
     EXCEPT
         Pass  "Function should raise exception with int parameter"
     ELSE
